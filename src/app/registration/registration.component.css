@@ -1,0 +1,199 @@
+
+.myImag {
+    color: #000;
+    overflow-x: hidden;
+   height: 100vh;
+    background-image: url("/assets/Images/backg_hostpital.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+
+.register{
+    /* background: -webkit-linear-gradient(left, #52b733, #00c6ff); */
+    margin-top: 0%;
+    padding: 6%;
+    
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    /* margin-top: 4%; */
+    height: 10%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    /* border-top-left-radius: 10% 50%; */
+    /* border-bottom-left-radius: 10% 50%; */
+}
+.register-left img{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 305px;
+height: 400px;
+    /* -webkit-animation: mover 2s infinite  alternate; */
+    /* animation: mover 1s infinite  alternate; */
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -14%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 7%;
+}
+.form-control:focus {
+    box-shadow:none !important;
+ }
+/* .btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #337ab7;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+} */
+/* .register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+} */
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: -15%;
+    color: #495057;
+}
+input, textarea {
+  
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    color:black;
+    font-size: 17px;
+   
+}
+
+/* .btnRegister:hover{
+    
+    background-color: #1A237E;
+    color: white;
+} */
+
+::placeholder {
+    color: #BDBDBD;
+    opacity: 2;
+    font-weight: 200
+} 
+
+ :-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 200
+}
+
+::-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 200
+}
+
+.btn-blue {
+    background-color: #337ab7;
+    width: 80px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.btn-blue:hover {
+    background-color: #1A237E;
+    cursor: pointer;
+}
+.btn-reset {
+    background-color: #ffb14d;
+    width: 80px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.btn-reset:hover {
+    background-color: #ff9000;
+    cursor: pointer;
+}
+.btn-cancel {
+    background-color: #DC3545;
+    width: 80px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.btn-cancel:hover {
+    background-color: #f7061e;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .col-md-9 {
+        flex: 0 0 auto;
+        width: 70%;
+        margin-left: 42px;
+    }
+}
+
+.logo_Imag{
+    width: 38px;
+    height: 35px;
+    border-radius: 20px;
+      -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}

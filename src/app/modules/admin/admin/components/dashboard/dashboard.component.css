@@ -1,0 +1,51 @@
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .app-toolbar {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+md-card {
+    max-width: 150px;
+    margin: 4px;
+    }
+    
+    #card-container {
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.side_menu:hover{
+  background: #337ab7 !important;
+  color: white !important;
+}
+
+.logo {
+  width: 124px;
+  height: 53px;
+  margin-top: 0px;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mat-icon{
+    width: 30px !important;
+}
+.themecolor{
+  background:  linear-gradient(to right, #ff7c02 , #f7f6f6);
+   background-clip: text;
+   -webkit-text-fill-color:transparent ;
+   
+  
+  
+}
+.logOut_Menu:hover{
+  background: #337ab7 !important;
+  color: white !important;
+}

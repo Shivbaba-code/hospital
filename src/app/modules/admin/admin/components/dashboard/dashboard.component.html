@@ -1,0 +1,68 @@
+<div class="imgportal">
+<mat-toolbar  class="mat-elevation-z6 app-toolbar" style="height: 60px; background-color:  #73c6b6;">
+    <button (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon style="color: white;">menu</mat-icon>
+    </button>
+    <!-- <div class="row">
+       
+        <img src="./assets/images/Academy.png" alt="company" title="Baliraja Academy" class="logo">
+    </div> -->
+    <!-- <span style="color: white;letter-spacing: 0.8px; padding-left: 5px;cursor: pointer;"> Baliraja Academy </span>
+     --><span class="example-spacer"></span>
+  
+  <div style="padding: 35px;">
+    <mat-icon style=" margin-right: 10px; margin-top: 5px; color: white; cursor: pointer; border-right: 1px solid white;"title="you tube" >youtube_searched_for</mat-icon>
+    <mat-icon style=" color: white; cursor: pointer;border-right: 1px solid white;" title="Mail"> email</mat-icon>
+    <mat-icon style=" margin-left: 10px;color: white; cursor: pointer;" title="Facebook"><span style="border-right: 1px solid white;">facebook</span></mat-icon>
+    <mat-icon></mat-icon>
+  </div>
+   
+    <button  [matMenuTriggerFor]="menu" style=" border-radius: 100%; background-color: white; border: none;" class="my-circle-button"  >
+        <!-- <mat-icon style="display: flex; justify-content: center;align-items: center;padding: 15px; height: 38px; color:#337ab7 ;">account_circle</mat-icon> -->
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="logOut_Menu">
+            <!-- <mat-icon>person_outline</mat-icon> -->
+          <span style="font-family: 'Mulish';">User Profile</span>
+        </button>
+        <button mat-menu-item class="logOut_Menu">
+            <!-- <mat-icon>settings</mat-icon> -->
+            <span style="font-family: 'Mulish';"> Setting</span>
+          </button>
+          <button mat-menu-item class="logOut_Menu" >
+            <!-- <mat-icon>exit_to_app</mat-icon> -->
+            <span style="font-family: 'Mulish';">Logout</span>
+          </button>
+        
+      </mat-menu>
+
+</mat-toolbar>
+<mat-drawer-container autosize >
+    <mat-drawer #drawer opened="true" mode="side" position="start">
+        <mat-nav-list>
+
+            <a class="side_menu" routerLink="./dashboard" mat-list-item style="font-family: 'Mulish';"><mat-icon >&nbsp;dashboard</mat-icon><span  style="font-size: 14px; font-weight: bold;padding-left: 10px;"> Dashboard</span></a>
+            <a class="side_menu" routerLink="./addEmp" mat-list-item style="font-family: 'Mulish'"><mat-icon > &nbsp;person_add</mat-icon><span style="font-size: 14px; font-weight: bold;padding-left: 10px;">Add Teacher</span></a>
+            <a class="side_menu" routerLink="./viewEmp" mat-list-item style="font-family: 'Mulish'"><mat-icon>&nbsp;streetview</mat-icon><span style="font-size: 14px; font-weight: bold; padding-left: 10px;">View Teacher</span></a>
+            <a class="side_menu" routerLink="./student" mat-list-item style="font-family: 'Mulish'"><mat-icon>&nbsp;supervised_user_circle</mat-icon><span style="font-size: 14px; font-weight: bold;padding-left: 10px;">Add Student</span></a>
+            <a class="side_menu" routerLink="./listStudent" mat-list-item style="font-family: 'Mulish'"><mat-icon >&nbsp;pageview</mat-icon><span style="font-size: 14px; font-weight: bold; padding-left: 10px;">View Student</span></a>
+            <a class="side_menu" routerLink="./feesDatils" mat-list-item style="font-family: 'Mulish'"><mat-icon >&nbsp;pageview</mat-icon><span style="font-size: 14px; font-weight: bold; padding-left: 10px;">Fees Student</span></a>
+       
+            <a class="side_menu" routerLink="./leaveList" mat-list-item style="font-family: 'Mulish'"><mat-icon >&nbsp;pageview</mat-icon><span style="font-size: 14px; font-weight: bold; padding-left: 10px;">Leave Student</span></a>
+            
+        </mat-nav-list>
+    </mat-drawer>
+    
+    <mat-drawer-content>
+       
+        <div style="text-align: center;min-height: 600px;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+    
+</mat-drawer-container>
+
+</div>
+
+
+

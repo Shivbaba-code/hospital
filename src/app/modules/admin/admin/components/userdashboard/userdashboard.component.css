@@ -1,0 +1,72 @@
+
+.imgportal{
+    color: #000;
+    overflow-x: hidden;
+    
+   height: 100vh;
+    background-image: url("/assets/Images/doct12.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+.container {
+  padding: 2px 16px;
+  background-color: #f8f9f9 ;
+}
+
+.test{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+   
+    transition: all .5s ease-in-out;
+}
+.test:hover {
+    transform: translateY(-10px);
+  }
+.parent {
+	background-color: ghostwhite;
+	display: grid;
+	grid-column-gap: .9rem;
+	grid-row-gap: 2rem;
+	grid-template-columns: repeat(5, 1fr );
+	grid-template-rows: repeat(2, 6rem );
+    animation: 1s ease-out 0s 1 slideInFroLeft;
+}
+
+@keyframes slideInFroLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+div {
+	padding: 1rem;
+}
+
+div div {
+	
+	
+}
+
+.div-1 {
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.div-2 {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+
+.img_right{
+    float: right;
+    width: 75%;
+    margin-top: -12px !important;
+}
